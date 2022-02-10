@@ -1,8 +1,11 @@
 header {
     background: url(images/central_park.jpg) 0 -200px no-repeat;  /* place image as background */
-    background-size: 1500px;
+    background-size: 100%;
     /*background-position: 0 -200px;*/
     /*background-repeat: no-repeat;*/
+    background-position: top center;
+    background-attachment: fixed;
+    background-size:contain;
     height: 400px; /* give header some height to display the background image */
     padding-top: 100px;
     padding-left: 100px;
@@ -49,3 +52,31 @@ header {
     padding-top: 20px;
     color:rgb(211, 218, 240);
   }
+
+  /* Create CSS for cards div */
+  .card {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .cards:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* .cards div {
+    width: 100%; 
+    min-height: 200px;
+    padding: 80px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ } */
+
+ .card img {
+    width: 100%; 
+    min-height: 200px;
+ }
+
